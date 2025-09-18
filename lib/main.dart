@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         // restart instead.
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Application 1'),
@@ -106,6 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text(
               'Hello World! Count:',
+              style: TextStyle(color: Colors.blue) 
             ),
             Text(
               '$_counter',
