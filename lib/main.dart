@@ -39,6 +39,12 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+String name = "Michal";
+int number = 1;
+double numy = 1.345;
+List myList = ['apple', 'banana'];
+Map<String, dynamic> myMap = {'Hockey': 'Fun', 'Cricket': -1};
+
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
