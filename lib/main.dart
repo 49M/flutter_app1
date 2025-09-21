@@ -11,9 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.green, brightness: Brightness.light),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Application 1'),
@@ -77,10 +79,19 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: const Center(
+      body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Text('Hello World!', style: TextStyle(color: Colors.purple)),
+        child: Container(
+            height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(25.0),
+              color: const Color(0xFFD2C49E),
+            ),
+            alignment: Alignment.center,
+            child: Text('Hello World!',
+                style: TextStyle(color: Colors.green[700]))),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
