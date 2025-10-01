@@ -83,27 +83,27 @@ class _MyHomePageState extends State<MyHomePage> {
             // Center is a layout widget. It takes a single child and positions it
             // in the middle of the parent.
             child: Container(
-          color: const Color(0xFFE2DFDA),
-          width: double.infinity,
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Container(
-              height: 100,
-              width: 100,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25.0),
-                color: const Color(0xFFD2C49E),
-              ),
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25.0),
-                color: const Color(0xFFD2C49E),
-              ),
-            ),
-          ]),
-        )), // This trailing comma makes auto-formatting nicer for build methods.
+                color: const Color(0xFFE2DFDA),
+                height: double.infinity,
+                child:
+                    Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25.0),
+                      color: const Color(0xFFD2C49E),
+                    ),
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25.0),
+                      color: const Color(0xFFD2C49E),
+                    ),
+                  ),
+                ]))), // This trailing comma makes auto-formatting nicer for build methods.
         floatingActionButton: FloatingActionButton(
           onPressed: _incrementCounter,
           tooltip: 'Increment',
