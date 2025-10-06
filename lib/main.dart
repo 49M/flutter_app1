@@ -55,18 +55,21 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Center(
             child: Container(
-                color: const Color(0xFFE2DFDA),
                 height: double.infinity,
-                child:
-                    Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                width: double.infinity,
+                color: const Color.fromARGB(255, 36, 36, 36),
+                alignment: Alignment.center,
+                child: Row(mainAxisSize: MainAxisSize.min, children: [
                   Container(
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25.0),
-                      color: const Color(0xFFD2C49E),
-                    ),
-                  ),
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25.0),
+                        color: const Color(0xFFD2C49E),
+                      ),
+                      child: const Center(
+                        child: Text('Hello World!'),
+                      )),
                   Container(
                     height: 100,
                     width: 100,
